@@ -1,0 +1,96 @@
+/* Design tokens, reset and typography */
+:root {
+  --paper: #f3ece0;
+  --paper-2: #ebe2d1;
+  --sand: #e4d6bd;
+  --ink: #1e3b2f;
+  --ink-soft: #3d5a4c;
+  --muted: #6b7a70;
+  --cinnamon: #b4532a;
+  --cinnamon-dark: #8f3f1d;
+  --gold: #c9a24b;
+  --line: #d6c9ae;
+  --white: #fffdf8;
+  --error: #a3261c;
+  --ok: #2c6b45;
+
+  --font-display: 'Gloock', 'Georgia', serif;
+  --font-body: 'Schibsted Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 6px;
+  --radius-lg: 14px;
+  --shadow: 0 1px 0 rgba(30, 59, 47, 0.06), 0 14px 30px -18px rgba(30, 59, 47, 0.35);
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --maxw: 76rem;
+  --header-h: 4.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.4rem, 6vw + 0.5rem, 4.6rem); }
+h2 { font-size: clamp(1.8rem, 3vw + 0.6rem, 2.9rem); }
+h3 { font-size: 1.3rem; }
+p { margin: 0; text-wrap: pretty; }
+
+:focus-visible {
+  outline: 3px solid var(--cinnamon);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+.skip-link {
+  position: absolute; left: 1rem; top: -4rem; z-index: 100;
+  background: var(--ink); color: var(--paper); padding: 0.6rem 1rem; border-radius: var(--radius);
+}
+.skip-link:focus { top: 1rem; }
+
+/* Section label, e.g. "01 — Stays" */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.7rem;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--cinnamon);
+}
+.eyebrow::before { content: ''; width: 2rem; height: 1px; background: currentColor; }
+
+.section-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem 2rem; margin-bottom: 2.5rem; }
+.section-head h2 { margin-top: 0.6rem; max-width: 22ch; }
+.section-head p { max-width: 38ch; color: var(--ink-soft); }
+
+/* Scroll reveal (progressive enhancement: only hides when JS added the class) */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.js .reveal.is-in { opacity: 1; transform: none; }
