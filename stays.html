@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Stays | Lanka Stayz</title>
+  <meta name="description" content="Browse villas, holiday homes, apartments and boutique hotels across Sri Lanka. Filter by destination, type and group size.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Explore Stays</span>
+        <h1>Find a place to stay</h1>
+        <p id="stay-sub">Sample properties across Sri Lanka.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filter by destination">
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="filter-row">
+          <div class="field">
+            <label for="f-type">Property type</label>
+            <select id="f-type" class="input"><option value="">All types</option></select>
+          </div>
+          <div class="field">
+            <label for="f-guests">Guests</label>
+            <select id="f-guests" class="input">
+              <option value="">Any group size</option>
+              <option value="1">1+ guest</option><option value="2">2+ guests</option><option value="4">4+ guests</option>
+              <option value="6">6+ guests</option><option value="8">8+ guests</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-sort">Sort by</label>
+            <select id="f-sort" class="input">
+              <option value="">Recommended</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="rating">Top rated</option>
+            </select>
+          </div>
+          <button class="btn btn--ghost btn--sm" id="reset" type="button">Reset filters</button>
+        </div>
+
+        <p class="result-count" id="count" aria-live="polite"></p>
+        <div class="grid" id="results"></div>
+        <div class="empty" id="empty" hidden>
+          <h2>No stays match those filters</h2>
+          <p>Try another destination or loosen the group size.</p>
+          <button class="btn btn--primary" id="empty-reset" type="button">Show all stays</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="js/stays.js"></script>
+</body>
+</html>
