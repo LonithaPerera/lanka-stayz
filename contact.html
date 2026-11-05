@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Lanka Stayz</title>
+  <meta name="description" content="Get in touch with the Lanka Stayz team about stays, bookings or hosting.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h1>Tell us where you are headed</h1>
+        <p>Questions about a stay, a group booking or listing your property? We reply within a day.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact">
+        <div class="contact__info">
+          <h2>Talk to a person</h2>
+          <ul class="contact-list contact-list--dark">
+            <li id="c-addr"></li><li id="c-tel"></li><li id="c-mail"></li>
+          </ul>
+          <p class="hours">Open daily, 8:30 am to 6:00 pm (Sri Lanka time).</p>
+        </div>
+        <div class="contact__form">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field full"><label for="c-name">Your name <span class="req" aria-hidden="true">*</span></label><input class="input" id="c-name" name="name" required autocomplete="name" data-label="your name"><p class="field__error"></p></div>
+              <div class="field"><label for="c-email">Email <span class="req" aria-hidden="true">*</span></label><input class="input" id="c-email" name="email" type="email" required autocomplete="email" data-label="your email address"><p class="field__error"></p></div>
+              <div class="field"><label for="c-phone">Phone <span class="req" aria-hidden="true">*</span></label><input class="input" id="c-phone" name="phone" type="tel" required autocomplete="tel" data-label="a contact number"><p class="field__error"></p></div>
+              <div class="field full"><label for="c-msg">Message <span class="req" aria-hidden="true">*</span></label><textarea class="input" id="c-msg" name="message" required data-label="a message"></textarea><p class="field__error"></p></div>
+            </div>
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <p class="form-ok" id="contact-ok" role="status" hidden>Thank you, your message is on its way. We will reply by email shortly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module">
+    import { renderChrome, ICONS } from './js/ui.js';
+    import { attachValidation } from './js/booking.js';
+    renderChrome('contact.html');
+    document.getElementById('c-addr').innerHTML = ICONS.pin + '<span>No. 24, Galle Road, Colombo 03, Sri Lanka</span>';
+    document.getElementById('c-tel').innerHTML = ICONS.phone + '<a href="tel:+94744141037">074 414 1037</a>';
+    document.getElementById('c-mail').innerHTML = ICONS.mail + '<a href="mailto:lankastayz@gmail.com">lankastayz@gmail.com</a>';
+    const form = document.getElementById('contact-form');
+    attachValidation(form, {
+      onValid() {
+        form.reset();
+        document.getElementById('contact-ok').hidden = false;
+      },
+    });
+  </script>
+</body>
+</html>
