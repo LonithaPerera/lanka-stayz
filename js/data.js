@@ -156,7 +156,11 @@ const raw = [
 export const PROPERTIES = raw.map((p) => ({
   ...p,
   images: [1, 2, 3, 4].map((n) => img(p.id, n)),
+  // 640px version of the cover photo, used by cards so phones don't download the large file
+  cover: { small: `assets/img/${p.id}-1-sm.jpg`, large: img(p.id, 1) },
 }));
+
+export const coverSrcset = (p) => `${p.cover.small} 640w, ${p.cover.large} 1200w`;
 
 export const AMENITY_LABELS = {
   wifi: 'Free Wi-Fi',

@@ -5,9 +5,9 @@
   --sand: #e4d6bd;
   --ink: #1e3b2f;
   --ink-soft: #3d5a4c;
-  --muted: #6b7a70;
-  --cinnamon: #b4532a;
-  --cinnamon-dark: #8f3f1d;
+  --muted: #59685e;
+  --cinnamon: #9e4620; /* darkened from #b4532a so small text passes WCAG AA on cream */
+  --cinnamon-dark: #7f3716;
   --gold: #c9a24b;
   --line: #d6c9ae;
   --white: #fffdf8;

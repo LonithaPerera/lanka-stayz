@@ -1,5 +1,5 @@
 // Shared UI: site header/footer, icons, property card, date helpers, reveal.
-import { formatLKR } from './data.js';
+import { formatLKR, coverSrcset } from './data.js';
 
 const svg = (d, extra = '') =>
   `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
@@ -112,7 +112,7 @@ export function propertyCard(p, i = 0, qs = '') {
   return `
   <article class="card reveal" style="--d:${(i % 3) * 80}ms">
     <a class="card__media" href="${href}" tabindex="-1" aria-hidden="true">
-      <img src="${p.images[0]}" alt="" loading="lazy" width="800" height="600">
+      <img src="${p.cover.small}" srcset="${coverSrcset(p)}" sizes="(min-width: 1100px) 360px, (min-width: 600px) 45vw, 100vw" alt="" loading="lazy" width="640" height="480">
       <span class="card__type">${p.type}</span>
     </a>
     <div class="card__body">

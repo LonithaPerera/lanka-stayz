@@ -7,7 +7,7 @@ initSearch(document.getElementById('search-form'));
 
 document.getElementById('featured-grid').innerHTML = PROPERTIES.slice(0, 6).map((p, i) => propertyCard(p, i)).join('');
 
-const cover = (name) => PROPERTIES.find((p) => p.destination === name)?.images[0];
+const cover = (name) => PROPERTIES.find((p) => p.destination === name)?.cover.small;
 document.getElementById('dest-list').innerHTML = DESTINATIONS.slice(0, 6)
   .map((d, i) => `
     <li class="reveal" style="--d:${i * 60}ms">
