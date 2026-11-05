@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lanka Stayz | Villas, Holiday Homes &amp; Boutique Stays in Sri Lanka</title>
+  <meta name="description" content="Discover handpicked villas, holiday homes, apartments and boutique hotels across Sri Lanka. Search by destination and request your stay with Lanka Stayz.">
+  <meta property="og:title" content="Lanka Stayz | Discover Your Perfect Stay in Sri Lanka">
+  <meta property="og:description" content="Handpicked villas, holiday homes and boutique stays from Ella to Galle.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Lanka Stayz","email":"lankastayz@gmail.com","telephone":"+94744141037","address":{"@type":"PostalAddress","addressLocality":"Colombo","addressCountry":"LK"}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg"><img src="assets/img/hero.jpg" alt="A natural infinity pool at the edge of Sri Lankan jungle" width="1920" height="1080" fetchpriority="high"></div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow eyebrow--light">Villas &middot; Holiday homes &middot; Boutique hotels</p>
+        <h1 id="hero-title">Discover Your Perfect Stay in <em>Sri Lanka</em></h1>
+        <p class="hero__lead">From misty tea country to the sun-warmed south coast, book places with a story, hosted by people who know the island.</p>
+      </div>
+
+      <div class="wrap hero__search">
+        <form class="search" id="search-form" action="stays.html" method="get" novalidate>
+          <div class="search__field">
+            <label for="s-dest">Destination</label>
+            <select id="s-dest" name="dest"><option value="">Anywhere in Sri Lanka</option></select>
+          </div>
+          <div class="search__field">
+            <label for="s-in">Check-in</label>
+            <input id="s-in" name="checkin" type="date">
+          </div>
+          <div class="search__field">
+            <label for="s-out">Check-out</label>
+            <input id="s-out" name="checkout" type="date">
+          </div>
+          <div class="search__field">
+            <label for="s-guests">Guests</label>
+            <select id="s-guests" name="guests">
+              <option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option>
+              <option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option>
+              <option value="8">8+ guests</option>
+            </select>
+          </div>
+          <button class="btn btn--primary search__btn" type="submit">Search stays</button>
+          <p class="search__error" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">01 &mdash; Featured stays</span>
+            <h2 id="featured-title">Places we would book ourselves</h2>
+          </div>
+          <p>A short list of favourites, from clifftop villas to a quiet cabana on the sand.</p>
+        </div>
+        <div class="grid" id="featured-grid"></div>
+        <p class="center-cta"><a class="btn btn--ghost" href="stays.html">See all stays</a></p>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="dest-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">02 &mdash; Destinations</span>
+            <h2 id="dest-title">Where would you like to wake up?</h2>
+          </div>
+        </div>
+        <ul class="dest-list" id="dest-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">03 &mdash; Why Lanka Stayz</span>
+            <h2 id="why-title">Booking that feels personal</h2>
+          </div>
+        </div>
+        <ol class="why">
+          <li class="reveal"><span>i.</span><h3>Handpicked, not listed</h3><p>Every property is visited and vetted, so what you see is what you get.</p></li>
+          <li class="reveal" style="--d:80ms"><span>ii.</span><h3>Honest local pricing</h3><p>Nightly rates in Sri Lankan rupees, with no surprise fees at the end.</p></li>
+          <li class="reveal" style="--d:160ms"><span>iii.</span><h3>A real person replies</h3><p>Send a booking request and our team confirms details personally within a day.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
