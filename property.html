@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stay Details | Lanka Stayz</title>
+  <meta name="description" content="Property details, photos, amenities and booking request for a Lanka Stayz accommodation.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div class="wrap" id="property-root"><p class="loading">Loading&hellip;</p></div>
+  </main>
+
+  <dialog class="modal" id="booking-dialog" aria-labelledby="booking-title">
+    <div class="modal__head">
+      <div><h2 class="modal__title" id="booking-title">Request a booking</h2><p class="modal__sub"></p></div>
+      <button class="modal__close" type="button" aria-label="Close booking form">&times;</button>
+    </div>
+    <div class="modal__body"></div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="modal__close lightbox__close" type="button" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox__nav lightbox__prev" type="button" aria-label="Previous photo">&#8592;</button>
+    <img alt="">
+    <button class="lightbox__nav lightbox__next" type="button" aria-label="Next photo">&#8594;</button>
+  </dialog>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="js/property.js"></script>
+</body>
+</html>
