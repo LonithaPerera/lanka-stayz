@@ -75,7 +75,7 @@ All photos are from Wikimedia Commons under free licences (attribution below). R
 
 | File | Source | Author | Licence |
 | --- | --- | --- | --- |
-| hero.jpg | [Infinity pool KC.jpg](https://commons.wikimedia.org/wiki/File:Infinity_pool_KC.jpg) | Kasun Chanaka Gunawardana | CC BY-SA 4.0 |
+| hero.jpg | [Thiranagama Sri Lanka Riff Hotel 5-star resort Presidential Suite view.jpg](https://commons.wikimedia.org/wiki/File:Thiranagama_Sri_Lanka_Riff_Hotel_5-star_resort_Presidential_Suite_view.jpg) | Xandrium | CC0 |
 | about.jpg | [Sri Lanka, Tea plantations, Nuwara Eliya, Picking tea leaves.jpg](https://commons.wikimedia.org/wiki/File:Sri_Lanka,_Tea_plantations,_Nuwara_Eliya,_Picking_tea_leaves.jpg) | Vyacheslav Argenberg | CC BY 4.0 |
 | cinnamon-ridge-villa-1.jpg | [Infinity pool -Duwili Ella Knuckles.jpg](https://commons.wikimedia.org/wiki/File:Infinity_pool_-Duwili_Ella_Knuckles.jpg) | Gayan Rajapakshe | CC BY-SA 4.0 |
 | cinnamon-ridge-villa-2.jpg | [Ella Gap (Valley), Sri Lanka.jpg](https://commons.wikimedia.org/wiki/File:Ella_Gap_(Valley),_Sri_Lanka.jpg) | Vyacheslav Argenberg | CC BY 4.0 |
@@ -99,7 +99,7 @@ All photos are from Wikimedia Commons under free licences (attribution below). R
 | pine-hill-bungalow-4.jpg | [Nuwara Eliya Gregory Lake.jpg](https://commons.wikimedia.org/wiki/File:Nuwara_Eliya_Gregory_Lake.jpg) | Chamixth | CC BY-SA 4.0 |
 | galle-face-suites-1.jpg | [Infinity Pool Colombo (29446044664).jpg](https://commons.wikimedia.org/wiki/File:Infinity_Pool_Colombo_(29446044664).jpg) | dronepicr | CC BY 2.0 |
 | galle-face-suites-2.jpg | [View of Colombo galle face.JPG](https://commons.wikimedia.org/wiki/File:View_of_Colombo_galle_face.JPG) | Saqib Qayyum | CC BY-SA 3.0 |
-| galle-face-suites-3.jpg | [Colombo galle face beach.JPG](https://commons.wikimedia.org/wiki/File:Colombo_galle_face_beach.JPG) | Saqib Qayyum | CC BY-SA 3.0 |
+| galle-face-suites-3.jpg | [Thiranagama Sri Lanka Riff Hotel 5-star resort Suite bedroom.jpg](https://commons.wikimedia.org/wiki/File:Thiranagama_Sri_Lanka_Riff_Hotel_5-star_resort_Suite_bedroom.jpg) | Xandrium | CC0 |
 | galle-face-suites-4.jpg | [Negombo Beach resort pool (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Negombo_Beach_resort_pool_(Unsplash).jpg) | Recal Media recalmedia | CC0 |
 | rock-view-sigiriya-1.jpg | [Sigiriya rock from a distance.jpg](https://commons.wikimedia.org/wiki/File:Sigiriya_rock_from_a_distance.jpg) | Yourusernamewillbepublic2 | CC0 |
 | rock-view-sigiriya-2.jpg | [Sigirîya Lion Rock (36231936082).jpg](https://commons.wikimedia.org/wiki/File:Sigir%C3%AEya_Lion_Rock_(36231936082).jpg) | V. Epiney | CC BY-SA 2.0 |
