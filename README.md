@@ -5,7 +5,7 @@ Author: **Lonitha Perera** (loniperera2005@gmail.com)
 
 A working sample website for a Sri Lankan accommodation platform: homepage with search, filterable listings, property details with gallery, and a validated booking-request form. It is a prototype, so there is no backend, payment or login.
 
-**Live demo:** _add your hosted URL here before submitting_
+**Live demo:** https://lonithaperera.github.io/lanka-stayz/
 **Source:** https://github.com/LonithaPerera/lanka-stayz
 
 ## Run it locally
